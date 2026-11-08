@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Munige Pranay Kumar, BCA student and aspiring software developer.">
+  <title>Munige Pranay Kumar | Portfolio</title>
+  <style>
+    :root {
+      --bg: #0b1020; --panel: #121a2d; --panel2: #172238;
+      --text: #edf2ff; --muted: #a8b4cc; --accent: #79d6c5;
+      --line: rgba(255,255,255,.11); --max: 1080px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: radial-gradient(circle at 80% 0%, #1c3150 0, transparent 34%), var(--bg); color: var(--text); font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif; line-height: 1.65; }
+    a { color: inherit; }
+    .wrap { width: min(var(--max), calc(100% - 40px)); margin: auto; }
+    header { position: sticky; top: 0; z-index: 5; backdrop-filter: blur(16px); background: rgba(11,16,32,.82); border-bottom: 1px solid var(--line); }
+    nav { min-height: 68px; display:flex; align-items:center; justify-content:space-between; gap:20px; }
+    .brand { font-weight: 800; letter-spacing: .04em; text-decoration:none; }
+    .brand span { color: var(--accent); }
+    .navlinks { display:flex; gap:22px; flex-wrap:wrap; }
+    .navlinks a { color:var(--muted); font-size:.92rem; text-decoration:none; }
+    .navlinks a:hover, a:hover { color:var(--accent); }
+    .hero { padding: 104px 0 82px; display:grid; grid-template-columns: 1.35fr .65fr; align-items:center; gap:46px; }
+    .eyebrow { color:var(--accent); text-transform:uppercase; letter-spacing:.18em; font-size:.78rem; font-weight:800; }
+    h1 { font-size:clamp(2.6rem, 6vw, 5rem); line-height:1.05; letter-spacing:-.055em; margin:16px 0 22px; }
+    h1 span { color:var(--accent); }
+    .lead { color:var(--muted); font-size:1.12rem; max-width:650px; }
+    .actions { display:flex; gap:13px; flex-wrap:wrap; margin-top:30px; }
+    .btn { display:inline-flex; padding:11px 18px; border-radius:10px; border:1px solid var(--line); text-decoration:none; font-weight:700; }
+    .primary { background:var(--accent); color:#08131b; border-color:var(--accent); }
+    .profile-card { background:linear-gradient(145deg, rgba(121,214,197,.14), rgba(23,34,56,.85)); border:1px solid var(--line); padding:28px; border-radius:22px; box-shadow:0 25px 70px rgba(0,0,0,.22); }
+    .monogram { width:92px; height:92px; display:grid; place-items:center; border-radius:24px; background:var(--accent); color:#08131b; font-size:2rem; font-weight:900; margin-bottom:22px; }
+    .profile-card p { color:var(--muted); margin-bottom:0; }
+    section { padding:58px 0; }
+    .section-head { margin-bottom:26px; }
+    h2 { font-size:clamp(1.8rem, 3vw, 2.5rem); letter-spacing:-.035em; margin:5px 0; }
+    .sub { color:var(--muted); margin:0; }
+    .grid { display:grid; grid-template-columns:repeat(2,1fr); gap:16px; }
+    .card { background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:23px; }
+    .card h3 { margin:0 0 8px; }
+    .card p { color:var(--muted); margin:0; }
+    .taglist { display:flex; gap:9px; flex-wrap:wrap; margin-top:18px; }
+    .tag { padding:6px 11px; border:1px solid var(--line); border-radius:999px; color:#d8e5f5; font-size:.86rem; background:rgba(255,255,255,.025); }
+    .timeline { border-left:1px solid var(--line); padding-left:22px; }
+    .timeline .card { margin-bottom:14px; }
+    .meta { color:var(--accent); font-size:.85rem; font-weight:700; }
+    .links { display:flex; flex-wrap:wrap; gap:14px; margin-top:16px; }
+    .links a { color:var(--accent); text-decoration:none; font-weight:700; }
+    footer { border-top:1px solid var(--line); padding:28px 0 40px; color:var(--muted); font-size:.9rem; }
+    @media (max-width:720px) {
+      .hero { grid-template-columns:1fr; padding:70px 0 45px; gap:28px; }
+      .grid { grid-template-columns:1fr; }
+      nav { align-items:flex-start; padding:16px 0; flex-direction:column; }
+      .navlinks { gap:14px; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <nav class="wrap">
+    <a class="brand" href="#home">MPK<span>.</span></a>
+    <div class="navlinks">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <div class="wrap hero" id="home">
+    <div>
+      <div class="eyebrow">BCA Student · Aspiring Software Developer</div>
+      <h1>Hi, I'm<br><span>Munige Pranay Kumar.</span></h1>
+      <p class="lead">I'm a computer applications student who enjoys learning how technology works and building useful digital experiences. I'm currently strengthening my programming, problem-solving and web development skills.</p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">Explore my work</a>
+        <a class="btn" href="mailto:munigepranaykumar@gmail.com">Contact me</a>
+      </div>
+    </div>
+    <aside class="profile-card">
+      <div class="monogram">MP</div>
+      <div class="eyebrow">A little about me</div>
+      <h3>Curious. Practical. Always learning.</h3>
+      <p>Interested in software development, emerging technologies and creating solutions that are useful in the real world.</p>
+      <div class="links">
+        <a href="https://github.com/pecunia689-collab" target="_blank" rel="noreferrer">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/pranay-pranaykumar" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+      </div>
+    </aside>
+  </div>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">Introduction</div><h2>About me</h2></div>
+      <div class="card">
+        <p>I'm pursuing a Bachelor of Computer Applications (BCA) at New Science Degree College, affiliated with Kakatiya University. I have been learning programming through C, C++, Java and Python, and I'm working to improve my practical coding and problem-solving abilities. I enjoy exploring new areas of technology and learning by building projects.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">What I'm learning</div><h2>Technical skills</h2><p class="sub">A growing toolkit that I'm developing through coursework and practice.</p></div>
+      <div class="grid">
+        <article class="card"><h3>Programming</h3><p>Programming fundamentals and object-oriented concepts.</p><div class="taglist"><span class="tag">C</span><span class="tag">C++</span><span class="tag">Java</span><span class="tag">Python</span></div></article>
+        <article class="card"><h3>Core concepts</h3><p>Building a foundation in computer science and software development.</p><div class="taglist"><span class="tag">OOP</span><span class="tag">Data Structures</span><span class="tag">Algorithms</span><span class="tag">SQL — learning</span></div></article>
+        <article class="card"><h3>Tools</h3><p>Tools for writing, managing and presenting work.</p><div class="taglist"><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">MS Word</span><span class="tag">Excel</span><span class="tag">PowerPoint</span></div></article>
+        <article class="card"><h3>Areas of interest</h3><p>Topics I would like to explore further.</p><div class="taglist"><span class="tag">Web Development</span><span class="tag">Blockchain</span><span class="tag">Cybersecurity</span><span class="tag">AI Systems</span></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">Learning by building</div><h2>Projects & initiatives</h2><p class="sub">Selected personal projects and initiatives. Add live links when they are ready to share.</p></div>
+      <div class="grid">
+        <article class="card">
+          <div class="meta">Personal project · In progress</div>
+          <h3>PM-3D-PRINTS</h3>
+          <p>A planned online storefront for showcasing 3D-printed products, collecting customer enquiries and connecting visitors through WhatsApp and Instagram.</p>
+          <div class="taglist"><span class="tag">Website planning</span><span class="tag">E-commerce</span><span class="tag">3D Printing</span></div>
+        </article>
+        <article class="card">
+          <div class="meta">Independent initiative</div>
+          <h3>Pranay Studio Agency</h3>
+          <p>A small-business website initiative focused on helping local businesses present their services online with clear, professional web experiences.</p>
+          <div class="taglist"><span class="tag">Web Design</span><span class="tag">Small Business</span><span class="tag">Digital Presence</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">Academic background</div><h2>Education</h2></div>
+      <div class="timeline">
+        <article class="card">
+          <div class="meta">Expected graduation: 2028</div>
+          <h3>Bachelor of Computer Applications (BCA)</h3>
+          <p>New Science Degree College · Affiliated with Kakatiya University</p>
+          <p style="margin-top:8px">Currently pursuing second year.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">Get in touch</div><h2>Let's connect</h2><p class="sub">I'm open to learning opportunities, collaboration and conversations about technology.</p></div>
+      <div class="card">
+        <h3>Munige Pranay Kumar</h3>
+        <p>Warangal, Telangana, India</p>
+        <div class="links">
+          <a href="mailto:munigepranaykumar@gmail.com">munigepranaykumar@gmail.com</a>
+          <a href="https://github.com/pecunia689-collab" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/pranay-pranaykumar" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap">© 2026 Munige Pranay Kumar. Built with care.</div></footer>
+</body>
+</html>
